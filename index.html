@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loading-container" id="loading-page">
+            <div class="loading-bar-wrapper">
+                <div class="heart">❤️</div>
+                <div class="loading-bar">
+                    <div class="loading-progress" id="loading-progress"></div>
+                </div>
+                <div class="heart">❤️</div>
+            </div>
+            <p id="loading-text">Loading love...</p>
+            <button id="show-birthday-button" class="hidden">Nhấn vào đây nè!</button>
+        </div>
+
+        <div class="birthday-page hidden" id="birthday-page">
+            <div class="decorations">
+                <div class="balloon balloon-1"></div>
+                <div class="balloon balloon-2"></div>
+                <div class="balloon balloon-3"></div>
+                <div class="confetti-container"></div>
+            </div>
+
+            <div class="birthday-card">
+                <h1 class="bounce-in">Happy Birthday!</h1>
+                <img src="/images/model.png" alt="Chiếc bánh kem sinh nhật nhiều tầng với nến lung linh" class="cake-image">
+            </div>           
+        </div>
+        <div class="gifts-container hidden" id="gifts-container">
+            <div class="gift-box" id="gift-box">
+                <p class="gift-text">Có quà đây nè, nhấn vào để mở!</p>
+                <img src="/images/gift.png" alt="Hộp quà sinh nhật" class="gift-box-image">
+            </div>
+            <div class="flower-card hidden" id="flower-card">
+                <img src="/images/flower.png" alt="Bó hoa hồng" class="flower-image">
+                <p class="flower-text">Một bó hoa dành tặng bông hoa xinh đẹp nhất!</p>
+                <button id="open-card-button" class="action-button">Mở thiệp</button>
+            </div>
+            <div class="message-card hidden" id="message-card">
+                <p class="message-text">Chúc mừng sinh nhật, tình yêu của anh! ❤️</p>
+                <p class="message-text">
+                    Mỗi năm, em lại thêm một tuổi, nhưng trong mắt anh, em luôn là cô gái bé nhỏ cần được chở che. 
+                    Chúc em luôn vui vẻ, hạnh phúc và thành công trên con đường của mình. 
+                    Hãy cứ sống thật vô tư và rực rỡ nhé. Anh yêu em!
+                </p>
+            </div>
+        </div>
+    </div>  
+    <audio id="birthday-song" autoplay src="/sound/birthday.mp3"></audio>
+    <script src="javascript.js"></script>
+</body>
+</html>
